@@ -26,16 +26,16 @@ export default function VehicleDetail() {
         name={`${selectedVehicle.vehicleId}`}
       />
     </div>
-    <div className="absolute top-0 left-0 z-10 p-4 w-full md:w-[400px]">
-      <div className="bg-white/90 backdrop-blur-md shadow-xl p-6 rounded-xl">
+    <div className="absolute top-0 left-0 z-10 p-2 w-full md:w-[350px]">
+      <div className="bg-white/50 backdrop-blur-md shadow-xl p-4 rounded-xl">
         <h1 className="text-xl font-bold mb-4">Vehicle Detail</h1>
         <div className="space-y-2 text-sm text-gray-800">
-          <p><span className="font-medium">Name:</span> {selectedVehicle.name}</p>
-          <p><span className="font-medium">Speed:</span> {selectedVehicle.speed} km/jam</p>
-          <p><span className="font-medium">Odometer:</span> {selectedVehicle.odometer.toLocaleString()} km</p>
-          <p><span className="font-medium">Fuel Level:</span> {selectedVehicle.fuel_level}%</p>
-          <p><span className="font-medium">Timestamp:</span> {new Date(selectedVehicle.timestamp).toLocaleString()}</p>
-          <p><span className="font-medium">Location:</span> {selectedVehicle.latitude}, {selectedVehicle.longitude}</p>
+          <p className="text-sm"><span className="font-medium text-sm">Name:</span> {selectedVehicle.name}</p>
+          <p className="text-sm"><span className="font-medium text-sm">Speed:</span> {selectedVehicle.speed} km/jam</p>
+          <p className="text-sm"><span className="font-medium text-sm">Odometer:</span> {selectedVehicle.odometer.toLocaleString()} km</p>
+          <p className="text-sm"><span className="font-medium text-sm">Fuel Level:</span> {selectedVehicle.fuel_level}%</p>
+          <p className="text-sm"><span className="font-medium text-sm">Timestamp:</span> {new Date(selectedVehicle.timestamp).toLocaleString()}</p>
+          <p className="text-sm"><span className="font-medium text-sm">Location:</span> {selectedVehicle.latitude}, {selectedVehicle.longitude}</p>
         </div>
 
         <div className="mt-6">
