@@ -29,8 +29,9 @@ export default function VehiclesList() {
             <img
               src={asset2}
               alt=""
-              className="absolute -top-20 -right-10 w-40 z-0 opacity-100 pointer-events-none select-none"
+              className="absolute top-0 -right-10 w-32 md:w-40 max-w-full z-0 opacity-100 pointer-events-none select-none translate-x-1/4 -translate-y-1/4 md:translate-x-0 md:-translate-y-20"
             />
+
             <div className="relative z-10 space-y-1">
               <h2 className="text-gray-800 text-lg font-semibold">{v.name}</h2>
               <p>

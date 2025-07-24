@@ -22,7 +22,7 @@ export default function SideBar({ isOpen }: SidebarProps) {
         isOpen ? "w-60" : "w-16"
       } shrink-0`}
     >
-      <div className="flex justify-center">
+      <div className="flex justify-center mb-3">
         <Link to="/">
           {isOpen ? (
             <img src={logo} alt="Logo" className="h-20" />
