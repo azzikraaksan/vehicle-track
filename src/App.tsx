@@ -7,7 +7,7 @@ import SideBar from "./components/SideBar";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function App() {
-  const [sideBarOpen, setSideBarOpen] = useState(true);
+  const [sideBarOpen, setSideBarOpen] = useState(false);
 
   return (
     <div className="flex h-screen w-full overflow-hidden">
