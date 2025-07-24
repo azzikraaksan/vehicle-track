@@ -37,8 +37,7 @@ A responsive and interactive **Vehicle Tracker Dashboard** built with **React**,
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/vehicle-tracker-dashboard.git
-cd vehicle-tracker-dashboard
+git clone https://github.com/azzikraaksan/vehicle-track.git
 ```
 
 ### 2. Install Dependencies
