@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Toyota Avanza",
+    "status": "ACTIVE",
+    "speed": 60,
+    "updated_at": "2025-07-23T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Honda Brio",
+    "status": "INACTIVE",
+    "speed": 0,
+    "updated_at": "2025-07-23T10:10:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Suzuki Ertiga",
+    "status": "ACTIVE",
+    "speed": 55,
+    "updated_at": "2025-07-23T10:15:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Daihatsu Xenia",
+    "status": "ACTIVE",
+    "speed": 70,
+    "updated_at": "2025-07-23T10:20:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Xpander",
+    "status": "INACTIVE",
+    "speed": 0,
+    "updated_at": "2025-07-23T10:25:00Z"
+  },
+  {
+    "id": 6,
+    "name": "Toyota Innova",
+    "status": "ACTIVE",
+    "speed": 65,
+    "updated_at": "2025-07-23T10:30:00Z"
+  },
+  {
+    "id": 7,
+    "name": "Nissan Livina",
+    "status": "ACTIVE",
+    "speed": 75,
+    "updated_at": "2025-07-23T10:35:00Z"
+  }
+]

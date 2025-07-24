@@ -1,0 +1,9 @@
+{
+  "vehicleId": 1,
+  "odometer": 123456.78,
+  "fuel_level": 70.2,
+  "timestamp": "2025-07-23T10:00:00Z",
+  "latitude": -6.12,
+  "longitude": 106.85,
+  "speed": 60
+}
