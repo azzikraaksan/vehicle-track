@@ -1,23 +1,8 @@
 "use client";
 
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  Tooltip,
-  CartesianGrid,
-} from "recharts";
-import {
-  ChartContainer,
-  ChartTooltipContent,
-} from "@/components/ui/chart";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-} from "@/components/ui/card";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from "recharts";
+import { ChartContainer, ChartTooltipContent } from "@/components/ui/chart";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 type Props = {
   data: { name: string; value: number }[];

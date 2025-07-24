@@ -20,7 +20,6 @@ export default function VehicleDetail() {
   return (
     <div className="relative w-full h-[610px]">
       <div className="absolute inset-0 z-0 h-[600px] w-full">
-        {/* Tetap render map saat data ada */}
         {selectedVehicle && (
           <VehicleMap
             lat={selectedVehicle.latitude}

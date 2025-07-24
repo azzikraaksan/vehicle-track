@@ -72,7 +72,7 @@ export default function VehicleListCard({ vehicles }: Props) {
                       className={buttonColors[index % buttonColors.length]}
                       onClick={() => navigate(`/vehicles/${v.id}`)}
                     >
-                      Lihat Detail
+                      Detail
                     </Button>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ export default function VehicleListCard({ vehicles }: Props) {
                       className={buttonColors[index % buttonColors.length]}
                       onClick={() => navigate(`/vehicles/${v.id}`)}
                     >
-                      Lihat Detail
+                      Detail
                     </Button>
                   </div>
                 </div>

@@ -1,11 +1,4 @@
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 type Props = {
@@ -37,8 +30,7 @@ export default function LineChartComponent({ vehicleDetails }: Props) {
           <LineChart data={chartData} margin={{ left: 20 }}>
             <XAxis dataKey="name" tick={{ fontSize: 12 }} />
             <YAxis unit=" km/h" tick={{ fontSize: 12 }} />
-
-            <Tooltip />
+            <Tooltip contentStyle={{ fontSize: 12 }} />
             <Line
               type="monotone"
               dataKey="value"

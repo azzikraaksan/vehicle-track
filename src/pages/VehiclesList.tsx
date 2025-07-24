@@ -16,7 +16,7 @@ export default function VehiclesList() {
 
   return (
     <div className="p-6 space-y-4">
-      <h1 className="text-2xl font-bold">Vehicle List</h1>
+      <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900">Vehicle List</h1>
 
       {error && <p className="text-destructive">{error}</p>}
 
