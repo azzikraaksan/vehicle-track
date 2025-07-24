@@ -51,9 +51,9 @@ export default function VehicleListCard({ vehicles }: Props) {
               ${bgColors[index % bgColors.length]} 
               ${
                 isHovered
-                  ? "xl:w-[355px] h-[180px] sm:w-[100px]"
+                  ? "xl:w-[355px] h-[180px] sm:w-[250px]"
                   : isAnyHovered
-                  ? "w-[120px] h-[180px]"
+                  ? "xl:w-[120px] h-[180px] sm:w-[70px]"
                   : "xl:w-[180px] xl:h-[180px]"
               }`}
           >
