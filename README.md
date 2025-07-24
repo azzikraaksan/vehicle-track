@@ -4,35 +4,31 @@ A responsive and interactive **Vehicle Tracker Dashboard** built with **React**,
 
 ---
 
+## 📸 UI Preview
+
+<img src="../vehicle-tracker-dashboard/src/assets/dashboard.png" alt="Vehicle Tracker Dashboard Preview" width="100%" />
+
+---
+
 ## 🧰 Tech Stack
 
 - **React + TypeScript** – UI development
 - **Vite** – Frontend build tool
 - **Tailwind CSS** – Utility-first styling
 - **ShadCN UI** – Headless component library
-- **Recharts** – Data visualization
 - **Zustand** – State management
-- **React Router DOM** – Routing
-- **Cloudinary** – Media storage (optional if used)
 
 ---
 
 ## ✨ Features
 
 ✅ Responsive layout optimized for all screen sizes  
-✅ Hover-to-expand vehicle cards with live map preview  
-✅ Rotated labels for inactive cards during hover  
 ✅ Pie chart of vehicle status (Active vs Inactive)  
 ✅ Line chart showing historical speed telemetry  
+✅ Bar chart of vehicle status 
 ✅ Buttons and cards color-coded for visual clarity  
 ✅ Dynamic data rendering from API  
 ✅ Reusable and modular component structure  
-
----
-
-## 📸 UI Preview
-
-> _(Optional: Tambahkan GIF atau screenshot UI di sini untuk memperlihatkan dashboardmu)_
 
 ---
 
@@ -43,10 +39,15 @@ A responsive and interactive **Vehicle Tracker Dashboard** built with **React**,
 ```bash
 git clone https://github.com/yourusername/vehicle-tracker-dashboard.git
 cd vehicle-tracker-dashboard
+```
 
-2. Install Dependencies
+### 2. Install Dependencies
+```bash
 npm install
+```
 
 
-3. Start the Development Server
+### 3. Start the Development Server
+```bash
 npm run dev
+```
