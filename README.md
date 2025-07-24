@@ -6,7 +6,7 @@ A responsive and interactive **Vehicle Tracker Dashboard** built with **React**,
 
 ## 📸 UI Preview
 
-<img src="../vehicle-tracker-dashboard/src/assets/dashboard.png" alt="Vehicle Tracker Dashboard Preview" width="100%" />
+<img src="dashboard.png" alt="Vehicle Tracker Dashboard Preview" width="100%" />
 
 ---
 
