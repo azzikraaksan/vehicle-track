@@ -1,4 +1,4 @@
-# 🚗 Vehicle Tracker Dashboard
+# 🚗 Vehicle Tracker Dashboard - Azzikra Ramadhanti Aksan
 
 A responsive and interactive **Vehicle Tracker Dashboard** built with **React**, **TypeScript**, and **Vite**, designed to display vehicle telemetry data, status distribution, and recent activity. This dashboard provides a clean and modern interface for monitoring vehicle movement and status in real-time.
 
@@ -14,7 +14,7 @@ A responsive and interactive **Vehicle Tracker Dashboard** built with **React**,
 
 - **React + TypeScript** – UI development
 - **Vite** – Frontend build tool
-- **Tailwind CSS** – Utility-first styling
+- **Tailwind CSS** – Styling
 - **ShadCN UI** – Headless component library
 - **Zustand** – State management
 
