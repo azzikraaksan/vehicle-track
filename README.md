@@ -26,7 +26,6 @@ A responsive and interactive **Vehicle Tracker Dashboard** built with **React**,
 ✅ Pie chart of vehicle status (Active vs Inactive)  
 ✅ Line chart showing historical speed telemetry  
 ✅ Bar chart of vehicle status 
-✅ Buttons and cards color-coded for visual clarity  
 ✅ Dynamic data rendering from API  
 ✅ Reusable and modular component structure  
 
@@ -37,8 +36,7 @@ A responsive and interactive **Vehicle Tracker Dashboard** built with **React**,
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/vehicle-tracker-dashboard.git
-cd vehicle-tracker-dashboard
+git clone https://github.com/azzikraaksan/vehicle-track.git
 ```
 
 ### 2. Install Dependencies
