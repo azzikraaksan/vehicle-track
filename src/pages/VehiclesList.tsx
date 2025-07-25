@@ -16,7 +16,7 @@ export default function VehiclesList() {
 
   return (
     <div className="p-6 space-y-4">
-      <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900">Vehicle List</h1>
+      <h1>Vehicle List</h1>
 
       {error && <p className="text-destructive">{error}</p>}
 
@@ -35,19 +35,16 @@ export default function VehiclesList() {
                 />
 
                 <div className="relative z-10 space-y-1">
-                  <h2 className="text-gray-800 text-lg font-semibold">{v.name}</h2>
-                  <p>
+                  <h2>{v.name}</h2>
+                  <h4>
                     Status:{" "}
-                    <span className="text-gray-800 font-medium">{v.status}</span>
-                  </p>
-                  <p className="text-gray-800">Speed: {v.speed} km/jam</p>
-                  <p className="text-gray-800 text-sm text-muted-foreground">
+                    <span>{v.status}</span>
+                  </h4>
+                  <h4>Speed: {v.speed} km/jam</h4>
+                  <p>
                     Last update: {new Date(v.updated_at).toLocaleString()}
                   </p>
-                  <Button
-                    className="text-blue-600 border-blue-600 bg-white hover:bg-blue-50"
-                    onClick={() => navigate(`/vehicles/${v.id}`)}
-                  >
+                  <Button variant="primary" onClick={() => navigate(`/vehicles/${v.id}`)}>
                     Detail
                   </Button>
                 </div>

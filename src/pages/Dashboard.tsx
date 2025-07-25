@@ -51,7 +51,7 @@ export default function Dashboard() {
 
   return (
     <div className="w-full overflow-x-hidden p-6 space-y-6">
-      <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900">
+      <h1>
         Dashboard
       </h1>
 
@@ -73,16 +73,15 @@ export default function Dashboard() {
         <>
           <div className="flex flex-col lg:flex-row gap-4 items-stretch">
             <Card className="bg-white shadow-sm rounded-xl p-4 w-full lg:w-[845px]">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 px-4 mb-2 mt-4">
-                <h2 className="text-lg sm:text-xl font-semibold text-gray-800">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 px-4 mb-1 mt-4">
+                <h2>
                   Recent Activities
                 </h2>
                 <div className="mb-4 mr-4">
                   <Link to="/vehicles">
                     <Button
                       size="sm"
-                      variant="outline"
-                      className="text-blue-600 border-blue-600 hover:bg-blue-50"
+                      variant="primary"
                     >
                       View Full List
                     </Button>
@@ -90,9 +89,9 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              <p className="px-4 text-base sm:text-base text-gray-700">
+              <h4 className="px-4">
                 Preview List
-              </p>
+              </h4>
 
               <CardContent className="p-4 flex justify-center">
                 <VehicleListCard

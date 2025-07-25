@@ -78,19 +78,19 @@ export default function VehicleListCard({ vehicles }: Props) {
                 </div>
               ) : isAnyHovered ? (
                 <div className="transform -rotate-90 whitespace-nowrap">
-                  <p className="text-lg font-bold">{v.name}</p>
+                  <h3>{v.name}</h3>
                 </div>
               ) : (
                 <div className="space-y-1">
-                  <h3 className=" text-sm sm:text-base md:text-base font-bold">
+                  <h4 className="font-bold">
                     {v.name}
-                  </h3>
-                  <p className="text-[10px] sm:text-sm md:text-sm text-gray-600">Speed: {v.speed} km/h</p>
-                  <p className="text-[10px] sm:text-sm md:text-sm text-gray-600">Status: {v.status}</p>
+                  </h4>
+                  <p>Speed: {v.speed} km/h</p>
+                  <p>Status: {v.status}</p>
                   <div className="mt-4">
                     <Button
                       size="sm"
-                      variant="outline"
+                      variant="primary"
                       className={buttonColors[index % buttonColors.length]}
                       onClick={() => navigate(`/vehicles/${v.id}`)}
                     >

@@ -1,21 +1,42 @@
-import { useEffect } from "react"
-import { useParams, useNavigate } from "react-router-dom"
-import { useVehicleStore } from "@/store/vehicleStore"
-import { Button } from "@/components/ui/button"
-import VehicleMap from "@/components/VehicleMap"
-import LoadingCard from "@/components/LoadingCard"
+import { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { useVehicleStore } from "@/store/vehicleStore";
+import { Button } from "@/components/ui/button";
+import VehicleMap from "@/components/VehicleMap";
+import LoadingCard from "@/components/LoadingCard";
 
 export default function VehicleDetail() {
-  const { id } = useParams()
-  const navigate = useNavigate()
-  const { selectedVehicle, fetchVehicleDetail, isLoading, error } = useVehicleStore()
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const { selectedVehicle, fetchVehicleDetail, isLoading, error } =
+    useVehicleStore();
+  const vehicleInfo = [
+    { label: "Name", value: selectedVehicle?.name },
+    { label: "Speed", value: `${selectedVehicle?.speed} km/jam` },
+    {
+      label: "Odometer",
+      value: `${selectedVehicle?.odometer.toLocaleString()} km`,
+    },
+    { label: "Fuel Level", value: `${selectedVehicle?.fuel_level}%` },
+    {
+      label: "Timestamp",
+      value: selectedVehicle?.timestamp
+        ? new Date(selectedVehicle.timestamp).toLocaleString()
+        : "-",
+    },
+    {
+      label: "Location",
+      value: `${selectedVehicle?.latitude}, ${selectedVehicle?.longitude}`,
+    },
+  ];
 
   useEffect(() => {
-    if (id) fetchVehicleDetail(Number(id))
-  }, [id])
+    if (id) fetchVehicleDetail(Number(id));
+  }, [id]);
 
-  if (error) return <p className="p-6 text-destructive">{error}</p>
-  if (!selectedVehicle && !isLoading) return <p className="p-6">Tidak ada data kendaraan.</p>
+  if (error) return <p className="p-6 text-destructive">{error}</p>;
+  if (!selectedVehicle && !isLoading)
+    return <p className="p-6">Tidak ada data kendaraan.</p>;
 
   return (
     <div className="relative w-full h-[610px]">
@@ -31,34 +52,28 @@ export default function VehicleDetail() {
 
       <div className="absolute top-0 left-0 z-10 p-2 w-full md:w-[350px]">
         <div className="bg-white/50 backdrop-blur-md shadow-xl p-4 rounded-xl">
-          <h1 className="text-xl font-bold mb-4">Vehicle Detail</h1>
+          <h3 className="mb-3">Vehicle Detail</h3>
 
           {isLoading ? (
             <LoadingCard />
           ) : (
-            <div className="space-y-2 text-sm text-gray-800">
-              <p><span className="font-medium">Name:</span> {selectedVehicle?.name}</p>
-              <p><span className="font-medium">Speed:</span> {selectedVehicle?.speed} km/jam</p>
-              <p><span className="font-medium">Odometer:</span> {selectedVehicle?.odometer.toLocaleString()} km</p>
-              <p><span className="font-medium">Fuel Level:</span> {selectedVehicle?.fuel_level}%</p>
-              <p>
-                <span className="font-medium">Timestamp:</span>{" "}
-                {selectedVehicle?.timestamp ? new Date(selectedVehicle.timestamp).toLocaleString() : "-"}
-              </p>
-              <p><span className="font-medium">Location:</span> {selectedVehicle?.latitude}, {selectedVehicle?.longitude}</p>
+            <div className="space-y-2">
+              {vehicleInfo.map((item) => (
+                <p key={item.label}>
+                  <span className="font-medium">{item.label}:</span>{" "}
+                  {item.value}
+                </p>
+              ))}
             </div>
           )}
 
           <div className="mt-6">
-            <Button
-              className="text-blue-600 border-blue-600 bg-white hover:bg-blue-50"
-              onClick={() => navigate(-1)}
-            >
+            <Button variant={"primary"} onClick={() => navigate(-1)}>
               ← Back
             </Button>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

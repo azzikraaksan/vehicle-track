@@ -2,40 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html, body {
-    @apply bg-[#FAFBFC];
-    font-family: 'Poppins', sans-serif;
-  }
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-family: inherit;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 @media (prefers-color-scheme: light) {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
 }
-
-
 
 @layer base {
   :root {
@@ -96,10 +67,29 @@ button:focus-visible {
 
 
 @layer base {
+  html, body {
+    @apply bg-[#FAFBFC];
+    font-family: 'Poppins', sans-serif;
+  }
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+  p {
+    @apply text-sm leading-relaxed text-gray-800 sm:text-sm md:text-sm;
+  }
+  h4 {
+    @apply text-base leading-relaxed text-gray-800 font-medium;
+  }
+  h1 {
+    @apply text-3xl sm:text-4xl font-semibold text-gray-900;
+  }
+  h3 {
+    @apply text-lg sm:text-xl font-semibold text-gray-800;
+  }
+  h2 {
+    @apply text-xl font-bold mb-4;
   }
 }
